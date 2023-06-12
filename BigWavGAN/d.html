@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo page for BigWavGAN</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+    <div class="header-title">
+        <header class="header">BigWavGAN: A Wave-To-Wave Generative Adversarial Network for Music Super-Resolution</header>  
+    </div>
+
+    <div>
+        <h1>This is the demo page of the paper:<p> 
+            BigWavGAN: A Wave-To-Wave Generative Adversarial Network for Music Super-Resolution</h1>
+        <hr>  
+        <h2>1. Listening test examples on MAESTRO (in-distribution data): </h2>
+    </div>
+    <table>
+        <tr>
+            <td>Input_lr</td>
+            <td>BEHMGAN</td>
+            <td>BigWavGAN</td>
+            <td>BigWavGAN w/o MRD</td>
+            <td>Demucs (BigWavGAN w/o MRD and MSD)</td>
+        </tr>
+        <tr>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/lr_input/1_lrinput.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/BEHMGan/1_BEHMGan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/BigWaveGan/1_bigwavegan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/DTFGan/1_dtfgan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/Demucs/1_demucs.wav' type="audio/wav" /></audio></td>
+        </tr>
+        <tr>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/lr_input/2_lrinput.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/BEHMGan/2_BEHMGan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/BigWaveGan/2_bigwavegan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/DTFGan/2_dtfgan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/meastro_samples/Demucs/2_demucs.wav' type="audio/wav" /></audio></td>
+        </tr>
+    </table>
+    <hr>  
+        <h2>2. Listening test examples on MusicNet (zero shot on out-of-distribution data): </h2>
+    <table>
+        <tr>
+            <td>Input_lr</td>
+            <td>BEHMGAN</td>
+            <td>BigWavGAN</td>
+            <td>BigWavGAN w/o MRD</td>
+            <td>Demucs (BigWavGAN w/o MRD and MSD)</td>
+        </tr>
+        <tr>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_input_3k_norm/1_input_lpf.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_BEHMGan_norm/1_unet2d_bwe_output.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_BigWaveGan_norm/1_bigwavegan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_DTFGan_norm/1_dtfgan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_Demucs_norm/1_demucs.wav' type="audio/wav" /></audio></td>
+        </tr>
+        <tr>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_input_3k_norm/2_input_lpf.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_BEHMGan_norm/2_unet2d_bwe_output.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_BigWaveGan_norm/2_bigwavegan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_DTFGan_norm/2_dtfgan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/musicnet_samples/musicnet_Demucs_norm/2_demucs.wav' type="audio/wav" /></audio></td>
+        </tr>
+    </table>
+    <hr>  
+    <h2>3. Listening test examples on MusicNet (zero shot on real historical music recordings): </h2>
+    <table>
+        <tr>
+            <td>Input_lr</td>
+            <td>BEHMGAN</td>
+            <td>BigWavGAN</td>
+            <td>BigWavGAN w/o MRD</td>
+            <td>Demucs (BigWavGAN w/o MRD and MSD)</td>
+        </tr>
+        <tr>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_input_16k_norm/1_input.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_BEHMGan_norm/1_original_unet2d_bwe_output.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_BigWavGan_norm/1_bigwavegan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_DTFGan_norm/1_dtfgan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_Demucs_norm/1_demucs.wav' type="audio/wav" /></audio></td>
+        </tr>
+        <tr>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_input_16k_norm/2_input.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_BEHMGan_norm/2_original_unet2d_bwe_output.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_BigWavGan_norm/2_bigwavegan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_DTFGan_norm/2_dtfgan.wav' type="audio/wav" /></audio></td>
+            <td><audio style="width: 60mm;" preload='metadata' controls><source src='Audio_samples/real_HM/real_piano/real_HM_Demucs_norm/2_demucs.wav' type="audio/wav" /></audio></td>
+        </tr>
+    </table>
+</body>
+</html>
